@@ -1,0 +1,7 @@
+{
+  "name": "mentoria",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
