@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'marcar',
+    loadChildren: () => import('./marcar/marcar.module').then( m => m.MarcarPageModule)
+  },
+  {
+    path: 'ver-agenda',
+    loadChildren: () => import('./ver-agenda/ver-agenda.module').then( m => m.VerAgendaPageModule)
+  },
 ];
 
 @NgModule({
