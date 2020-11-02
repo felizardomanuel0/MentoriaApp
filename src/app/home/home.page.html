@@ -18,5 +18,17 @@
     <strong>MENTORIA</strong>
     <ion-button expand="block" size="large"  [routerLink]="['/marcar']">MARACAR MENTORIA</ion-button>
     <ion-button expand="block" size="large"  [routerLink]="['/ver-agenda']">VER AGENDA</ion-button>
+    
+    <ion-list>
+      <ion-item>
+        <ion-label>Mentor</ion-label>
+        <ion-toggle [(ngModel)]="mentor"></ion-toggle>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Mentoriado</ion-label>
+        <ion-toggle [(ngModel)]="mentoriado"></ion-toggle>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>

@@ -6,6 +6,52 @@
 
 <ion-content>
 
-  <h1>Marcar Mentoria</h1>
+<ion-grid>
+  
+  <ion-item class="formulario">
+    <ion-col>
+      <ion-row>
+        <ion-label class="titulo">Topico</ion-label>
+      </ion-row>
+      <ion-row>
+        <ion-input placeholder="Ex: Relacionamento, Financas"></ion-input>
+      </ion-row>
+    </ion-col>
+  </ion-item>
+
+  <ion-item class="formulario">
+        <ion-label class="titulo">Data</ion-label>
+        <ion-datetime placeholder="Escolha a data" displayFormat="DD/MM/YYYY" min="2020-01-30" max="2030-01-30"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="titulo">Hora-Inicio</ion-label>
+    <ion-datetime displayFormat="HH:mm" placeholder="Escolha a hora"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="titulo">Hora-Fim</ion-label>
+    <ion-datetime displayFormat="HH:mm" placeholder="Escolha a hora"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="titulo">Mentor com</ion-label>
+    <ion-select placeholder="mentor(a)" okText="Confirmar" cancelText="Cancelar">
+      <ion-select-option value="a">Pr. Torre</ion-select-option>
+      <ion-select-option value="b">Pr. Download</ion-select-option>
+      <ion-select-option value="c">Pf. Djoje</ion-select-option>
+      <ion-select-option value="d">Rev. Ananias</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item >
+    <ion-label class="titulo" position="stacked">Descreva o assunto</ion-label>
+    <ion-textarea rows="7" class="text-area"></ion-textarea>
+  </ion-item>
+  
+
+<ion-button expand="block" size="large" >AGENDAR</ion-button>
+
+</ion-grid>
 
 </ion-content>
