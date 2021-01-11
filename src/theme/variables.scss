@@ -76,6 +76,11 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  ion-content{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

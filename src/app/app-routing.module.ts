@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'ver-agenda',
     loadChildren: () => import('./ver-agenda/ver-agenda.module').then( m => m.VerAgendaPageModule)
   },
+  {
+    path: 'mentor',
+    loadChildren: () => import('./mentor/mentor.module').then( m => m.MentorPageModule)
+  },
 ];
 
 @NgModule({
